@@ -30,7 +30,7 @@ const DUMMY_PRODUCTS = [
   ];
 
 const AvailableProducts = () => {
-    const productsList = DUMMY_PRODUCTS.map(product => <ProductItem key={product.id} name={product.name} description={product.description} price={product.price}/>);
+    const productsList = DUMMY_PRODUCTS.map(product => <ProductItem key={product.id} id={product.id} name={product.name} description={product.description} price={product.price}/>);
     return (
         <section className={classes.products}>
             <ul>
